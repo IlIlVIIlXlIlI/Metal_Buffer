@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C45802CA25DAE0630008BD74 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45802C925DAE0630008BD74 /* main.swift */; };
+		C45802D425DAE1370008BD74 /* shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = C45802D325DAE1370008BD74 /* shader.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,9 @@
 /* Begin PBXFileReference section */
 		C45802C625DAE0630008BD74 /* MetalBuffer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MetalBuffer; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45802C925DAE0630008BD74 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		C45802D125DAE0D50008BD74 /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		C45802D225DAE11E0008BD74 /* Buffer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Buffer-Bridging-Header.h"; sourceTree = "<group>"; };
+		C45802D325DAE1370008BD74 /* shader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = shader.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				C45802C925DAE0630008BD74 /* main.swift */,
+				C45802D125DAE0D50008BD74 /* ShaderTypes.h */,
+				C45802D225DAE11E0008BD74 /* Buffer-Bridging-Header.h */,
+				C45802D325DAE1370008BD74 /* shader.metal */,
 			);
 			path = MetalBuffer;
 			sourceTree = "<group>";
@@ -119,6 +126,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C45802D425DAE1370008BD74 /* shader.metal in Sources */,
 				C45802CA25DAE0630008BD74 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,6 +256,7 @@
 				DEVELOPMENT_TEAM = FJ5PE3F945;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shogonobuhara/Xcode/MetalBuffer/MetalBuffer/Buffer-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -259,6 +268,7 @@
 				DEVELOPMENT_TEAM = FJ5PE3F945;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/shogonobuhara/Xcode/MetalBuffer/MetalBuffer/Buffer-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
